@@ -109,7 +109,7 @@ class Assistant:
         )
 
 webcam_stream = WebcamStream().start()
-model = ChatGoogleGenerativeAI(google_api_key='AIzaSyAw1KjtzXP6Dj6C3800Rx9Gv8jpjOj32gE',model="gemini-1.5-flash-latest")
+model = ChatGoogleGenerativeAI(google_api_key='your api key here',model="gemini-1.5-flash-latest")
 assistant = Assistant(model)
 
 # Streamlit app
@@ -249,3 +249,4 @@ detection_thread.start()
 
 capture_thread.join()
 detection_thread.join()
+
